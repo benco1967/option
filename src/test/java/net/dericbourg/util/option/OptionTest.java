@@ -12,11 +12,11 @@ public class OptionTest {
 		String value = "simpleUseCases";
 		String valueOther = "simpleUseCases Other";
 		// Some
-		Option<String> Option = Optional.some(value);
-		assertEquals(value, Option.get());
-		assertEquals(value, Option.getOrElse(valueOther));
-		assertNotSame(valueOther, Option.get());
-		assertNotSame(valueOther, Option.getOrElse(valueOther));
+		Option<String> option = Optional.some(value);
+		assertEquals(value, option.get());
+		assertEquals(value, option.getOrElse(valueOther));
+		assertNotSame(valueOther, option.get());
+		assertNotSame(valueOther, option.getOrElse(valueOther));
 	}
 
 	@Test
@@ -31,7 +31,7 @@ public class OptionTest {
 	@Test(expected = UndefinedOptionException.class)
 	public void simpleInvalidUseCaseSomePassedNull() {
 		@SuppressWarnings("unused")
-		Option<String> Option = Optional.some(null);
+		Option<String> option = Optional.some(null);
 	}
 
 	@Test(expected = UndefinedOptionException.class)
