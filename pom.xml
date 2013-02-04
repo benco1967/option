@@ -21,8 +21,23 @@
 	</licenses>
 
 	<scm>
-		<url>git://github.com/adericbourg/option.git</url>
+		<url>https://github.com/adericbourg/option/tree/dev</url>
 	</scm>
+
+	<developers>
+		<developer>
+			<id>adericbourg</id>
+			<name>Alban Dericbourg</name>
+			<email>a.dericbourg+github@gmail.com</email>
+			<url>http://www.dericbourg.net</url>
+            <timezone>+1</timezone>
+        </developer>
+    </developers>
+
+	 <ciManagement>
+        <system>Travis CI</system>
+        <url>https://www.travis-ci.org/adericbourg/option</url>
+    </ciManagement>
 
 	<properties>
 		<jdk.version>1.6</jdk.version>
