@@ -5,9 +5,24 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.dericbourg.util</groupId>
 	<artifactId>option</artifactId>
-	<version>1.0.0</version> 
+	<packaging>jar</packaging>
+	<version>1.1.0-SNAPSHOT</version> 
 
-	<description>A Java implementation of Scala's Option.</description>
+	<name>Option</name>
+	<description>A Java implementation of Scala's Option</description>
+	<url>https://github.com/adericbourg/option</url>
+
+	<licenses>
+		<license>
+			<name>GNU General public licence, Version 3, 29 June 2007</name>
+			<url>http://www.gnu.org/licenses/gpl-3.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<scm>
+		<url>git://github.com/adericbourg/option.git</url>
+	</scm>
 
 	<properties>
 		<jdk.version>1.6</jdk.version>
