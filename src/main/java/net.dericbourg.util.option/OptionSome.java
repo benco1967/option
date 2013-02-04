@@ -11,7 +11,7 @@ class OptionSome<T> implements Option<T> {
         if (value == null) {
             throw new UndefinedOptionException();
         }
-        value = value;
+        this.value = value;
     }
 
     public boolean isDefined() {
