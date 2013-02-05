@@ -11,7 +11,7 @@ enum OptionNone implements Option<Object> {
     }
 
     public <E extends Exception> Object getValueOrThrowException(Class<E> e, String message) throws E {
-        throw new UndefinedOptionException();
+        throw e;
     }
 
     public <F extends Object> Object getOrElse(F fallBackValue) {
